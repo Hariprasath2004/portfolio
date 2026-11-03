@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+
+<html class="dark scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Hariprasath Ranjithkumar | Java Backend Developer</title>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Fonts: Geist, Inter, JetBrains Mono -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-surface": "#e0e2ed",
+            "on-primary-container": "#0d0096",
+            "surface-dim": "#10131b",
+            "primary": "#c0c1ff",
+            "on-secondary-container": "#e6ecff",
+            "tertiary-container": "#00885d",
+            "secondary-fixed-dim": "#adc6ff",
+            "surface-bright": "#363941",
+            "inverse-on-surface": "#2d3038",
+            "on-tertiary": "#003824",
+            "inverse-primary": "#494bd6",
+            "surface-container-lowest": "#0b0e15",
+            "on-tertiary-fixed-variant": "#005236",
+            "on-background": "#e0e2ed",
+            "on-secondary-fixed": "#001a42",
+            "surface-variant": "#32353d",
+            "on-tertiary-fixed": "#002113",
+            "on-surface-variant": "#c7c4d7",
+            "tertiary-fixed": "#6ffbbe",
+            "secondary-container": "#0566d9",
+            "on-error": "#690005",
+            "primary-fixed-dim": "#c0c1ff",
+            "outline": "#908fa0",
+            "on-primary": "#1000a9",
+            "outline-variant": "#464554",
+            "surface-container": "#1d2027",
+            "error-container": "#93000a",
+            "on-tertiary-container": "#000703",
+            "on-error-container": "#ffdad6",
+            "secondary-fixed": "#d8e2ff",
+            "tertiary": "#4edea3",
+            "primary-fixed": "#e1e0ff",
+            "on-primary-fixed": "#07006c",
+            "surface": "#10131b",
+            "on-secondary": "#002e6a",
+            "background": "#10131b",
+            "on-secondary-fixed-variant": "#004395",
+            "tertiary-fixed-dim": "#4edea3",
+            "surface-container-low": "#181b23",
+            "secondary": "#adc6ff",
+            "on-primary-fixed-variant": "#2f2ebe",
+            "surface-container-highest": "#32353d",
+            "error": "#ffb4ab",
+            "inverse-surface": "#e0e2ed",
+            "surface-container-high": "#272a32",
+            "primary-container": "#8083ff",
+            "surface-tint": "#c0c1ff"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-md": "1rem",
+            "space-sm": "0.5rem",
+            "space-2xl": "4rem",
+            "space-xl": "2.5rem",
+            "margin-mobile": "1rem",
+            "space-xs": "0.25rem",
+            "space-lg": "1.5rem",
+            "margin": "2rem",
+            "gutter-mobile": "1rem",
+            "gutter": "1.5rem"
+          },
+          "fontFamily": {
+            "headline-sm": ["Geist", "sans-serif"],
+            "headline-md": ["Geist", "sans-serif"],
+            "body-md": ["Inter", "sans-serif"],
+            "label-code-md": ["JetBrains Mono", "monospace"],
+            "label-ui": ["Inter", "sans-serif"],
+            "body-sm": ["Inter", "sans-serif"],
+            "headline-lg": ["Geist", "sans-serif"],
+            "label-code-sm": ["JetBrains Mono", "monospace"],
+            "display-lg": ["Geist", "sans-serif"],
+            "body-lg": ["Inter", "sans-serif"],
+            "display-xl": ["Geist", "sans-serif"],
+            "display-lg-mobile": ["Geist", "sans-serif"],
+            "headline-lg-mobile": ["Geist", "sans-serif"],
+            "display-xl-mobile": ["Geist", "sans-serif"]
+          },
+          "fontSize": {
+            "headline-sm": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "500" }],
+            "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "400" }],
+            "label-code-md": ["13px", { "lineHeight": "18px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "label-ui": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "label-code-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }],
+            "display-lg": ["44px", { "lineHeight": "52px", "letterSpacing": "-0.025em", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "display-xl": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" }],
+            "display-lg-mobile": ["30px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "headline-lg-mobile": ["24px", { "lineHeight": "30px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "display-xl-mobile": ["36px", { "lineHeight": "42px", "letterSpacing": "-0.025em", "fontWeight": "700" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    /* Glow highlights */
+    .glow-indigo {
+      background: radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
+    }
+    .glow-cyan {
+      background: radial-gradient(circle at 50% 100%, rgba(78, 222, 163, 0.08) 0%, transparent 70%);
+    }
+    /* Hairline code container */
+    .hairline-card {
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.05);
+    }
+    .hairline-card:hover {
+      border-color: rgba(99, 102, 241, 0.35);
+      box-shadow: 0 8px 32px -8px rgba(99, 102, 241, 0.15), inset 0 1px 0 0 rgba(255, 255, 255, 0.08);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen relative overflow-x-hidden">
+<!-- Atmospheric Background Elements -->
+<div class="fixed inset-0 pointer-events-none z-0">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[550px] bg-primary-container/10 blur-[130px] rounded-full"></div>
+<div class="absolute top-[800px] right-0 w-[500px] h-[500px] bg-tertiary/5 blur-[120px] rounded-full"></div>
+<div class="absolute top-[2200px] left-[-100px] w-[600px] h-[600px] bg-primary/5 blur-[140px] rounded-full"></div>
+</div>
+<!-- 1. TOP NAVIGATION BAR (Sticky Shared Component) -->
+<header class="fixed top-4 left-1/2 -translate-x-1/2 w-[calc(100%-2rem)] max-w-[1200px] rounded-xl z-50 bg-surface-container-low/75 dark:bg-surface-container-low/75 backdrop-blur-md border border-outline-variant/30 dark:border-outline-variant/30 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.6)]">
+<div class="flex justify-between items-center h-14 px-5 w-full">
+<!-- Brand Logo -->
+<a class="flex items-center gap-2 group transition-all duration-200 ease-out active:scale-95" href="#hero">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary animate-pulse shadow-[0_0_8px_#4edea3]"></span>
+<span class="text-headline-sm font-headline-sm tracking-tight text-on-surface dark:text-on-surface font-semibold group-hover:text-primary transition-colors">HR.dev</span>
+</a>
+<!-- Desktop Navigation Links -->
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-label-code-md font-label-code-md text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface dark:hover:text-on-surface transition-colors" href="#about">About</a>
+<a class="text-label-code-md font-label-code-md text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface dark:hover:text-on-surface transition-colors" href="#skills">Skills</a>
+<a class="text-label-code-md font-label-code-md text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface dark:hover:text-on-surface transition-colors" href="#experience">Experience</a>
+<a class="text-label-code-md font-label-code-md text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface dark:hover:text-on-surface transition-colors" href="#projects">Projects</a>
+<a class="text-label-code-md font-label-code-md text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface dark:hover:text-on-surface transition-colors" href="#education">Education</a>
+<a class="text-label-code-md font-label-code-md text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface dark:hover:text-on-surface transition-colors" href="#contact">Contact</a>
+</nav>
+<!-- Trailing Actions -->
+<div class="flex items-center gap-3">
+<!-- Availability Pill -->
+<div class="hidden lg:flex items-center gap-2 px-3 py-1 rounded-full bg-tertiary/10 border border-tertiary/30 text-tertiary text-label-code-sm font-label-code-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-ping"></span>
+<span>Available for Roles</span>
+</div>
+<!-- Terminal & Code Utility Icons -->
+<a class="p-2 rounded-lg bg-surface-container/60 hover:bg-surface-container border border-outline-variant/30 text-on-surface-variant hover:text-primary transition-all duration-200" href="#projects" title="Source Architecture">
+<span class="material-symbols-outlined text-sm" data-icon="terminal">terminal</span>
+</a>
+<a class="p-2 rounded-lg bg-surface-container/60 hover:bg-surface-container border border-outline-variant/30 text-on-surface-variant hover:text-primary transition-all duration-200" href="https://github.com" rel="noreferrer" target="_blank" title="View Code">
+<span class="material-symbols-outlined text-sm" data-icon="code">code</span>
+</a>
+<!-- Primary CTA: Get in Touch -->
+<a class="text-label-ui font-label-ui px-4 py-2 rounded-lg bg-primary-container text-on-surface font-semibold hover:bg-inverse-primary border border-primary/20 shadow-[0_0_15px_rgba(128,131,255,0.25)] transition-all duration-200 active:scale-95" href="#contact">
+          Get in Touch
+        </a>
+</div>
+</div>
+</header>
+<!-- MAIN WRAPPER -->
+<main class="relative z-10 pt-24 max-w-[1200px] mx-auto px-4 md:px-6">
+<!-- 2. SECTION 1: HERO SECTION -->
+<section class="min-h-[calc(100vh-6rem)] flex flex-col justify-center py-12 lg:py-20" id="hero">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+<!-- Left Column: Copy & Actions -->
+<div class="lg:col-span-6 flex flex-col items-start gap-6">
+<!-- Availability Pill -->
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-tertiary/10 border border-tertiary/30 shadow-[0_0_12px_rgba(78,222,163,0.15)]">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-tertiary"></span>
+</span>
+<span class="text-label-code-sm font-label-code-sm text-tertiary tracking-wider font-semibold">AVAILABLE FOR OPPORTUNITIES</span>
+</div>
+<!-- Main Heading -->
+<div class="space-y-2">
+<h1 class="text-display-xl-mobile md:text-display-xl font-display-xl text-on-surface tracking-tight">
+              Hi, I'm <span class="text-on-surface">Hariprasath.</span>
+</h1>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg bg-gradient-to-r from-primary via-primary-fixed-dim to-tertiary bg-clip-text text-transparent">
+              Java Backend Developer
+            </h2>
+</div>
+<!-- Description -->
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-xl leading-relaxed">
+            I build scalable backend applications, REST APIs, and database-driven web solutions using Java and modern web technologies.
+          </p>
+<!-- Primary CTA Buttons -->
+<div class="flex flex-wrap items-center gap-4 pt-2 w-full sm:w-auto">
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-primary-container text-on-surface text-label-ui font-label-ui font-semibold shadow-[0_0_20px_rgba(128,131,255,0.35)] hover:bg-inverse-primary border border-primary/30 transition-all duration-200 active:scale-95 group" href="#projects">
+<span>View My Projects</span>
+<span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-surface-container-low hover:bg-surface-container border border-outline-variant/40 text-on-surface text-label-ui font-label-ui font-medium transition-all duration-200 active:scale-95" href="#contact">
+<span>Contact Me</span>
+<span class="material-symbols-outlined text-sm text-on-surface-variant" data-icon="mail">mail</span>
+</a>
+</div>
+<!-- Social Proof Bar -->
+<div class="flex items-center gap-6 pt-4 border-t border-outline-variant/20 w-full text-label-code-sm font-label-code-sm text-on-surface-variant">
+<span class="text-outline">CONNECT:</span>
+<a class="hover:text-primary transition-colors flex items-center gap-1.5" href="https://github.com" rel="noreferrer" target="_blank">
+<span class="material-symbols-outlined text-sm" data-icon="terminal">terminal</span>
+<span>GitHub</span>
+</a>
+<a class="hover:text-primary transition-colors flex items-center gap-1.5" href="https://linkedin.com" rel="noreferrer" target="_blank">
+<span class="material-symbols-outlined text-sm" data-icon="badge">badge</span>
+<span>LinkedIn</span>
+</a>
+<a class="hover:text-primary transition-colors flex items-center gap-1.5" href="mailto:ranjithhari2004@gmail.com">
+<span class="material-symbols-outlined text-sm" data-icon="send">send</span>
+<span>Email</span>
+</a>
+</div>
+</div>
+<!-- Right Column: Interactive Code Inspector Window -->
+<div class="lg:col-span-6 w-full">
+<div class="relative rounded-xl overflow-hidden bg-surface-container-lowest border border-outline-variant/40 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.8)] glow-indigo">
+<!-- Window Title Bar -->
+<div class="flex items-center justify-between px-4 py-3 bg-surface-container-low border-b border-outline-variant/30">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-[#ef4444]/80 inline-block"></span>
+<span class="w-3 h-3 rounded-full bg-[#eab308]/80 inline-block"></span>
+<span class="w-3 h-3 rounded-full bg-[#22c55e]/80 inline-block"></span>
+<span class="ml-2 text-label-code-sm font-label-code-sm text-outline">backend-core / src / main / java</span>
+</div>
+<div class="flex items-center gap-1.5 text-label-code-sm font-label-code-sm text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span>Java 17 (LTS)</span>
+</div>
+</div>
+<!-- Code Tabs -->
+<div class="flex items-center bg-surface-container-lowest border-b border-outline-variant/20 px-2 text-label-code-sm font-label-code-sm">
+<div class="px-3 py-2 border-b-2 border-primary text-primary bg-surface-container-low/40 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-xs text-primary" data-icon="code">code</span>
+<span>JobService.java</span>
+</div>
+<div class="px-3 py-2 text-outline hover:text-on-surface transition-colors flex items-center gap-1.5">
+<span>DatabasePool.java</span>
+</div>
+<div class="px-3 py-2 text-outline hover:text-on-surface transition-colors flex items-center gap-1.5">
+<span>RedisCache.java</span>
+</div>
+</div>
+<!-- Code Editor Body -->
+<div class="p-4 md:p-5 font-label-code-sm text-label-code-sm overflow-x-auto leading-relaxed bg-[#0b0e15] text-on-surface-variant">
+<div class="grid grid-cols-[2rem_1fr] gap-3">
+<!-- Line Numbers -->
+<div class="text-outline-variant select-none text-right font-label-code-sm space-y-1 opacity-60">
+<div>01</div>
+<div>02</div>
+<div>03</div>
+<div>04</div>
+<div>05</div>
+<div>06</div>
+<div>07</div>
+<div>08</div>
+<div>09</div>
+<div>10</div>
+<div>11</div>
+<div>12</div>
+<div>13</div>
+</div>
+<!-- Code Lines -->
+<div class="space-y-1">
+<div><span class="text-primary-container">@Service</span></div>
+<div><span class="text-secondary-fixed-dim">public class</span> <span class="text-tertiary">JobApplicationService</span> {</div>
+<div class="pl-4"><span class="text-primary-container">@Transactional</span>(<span class="text-secondary">rollbackFor</span> = SQLException.class)</div>
+<div class="pl-4"><span class="text-secondary-fixed-dim">public</span> Response <span class="text-primary">processApplication</span>(UUID <span class="text-on-surface">candidateId</span>, Long <span class="text-on-surface">jobId</span>) {</div>
+<div class="pl-8 text-outline">// Check Redis Cache for duplicate prevention</div>
+<div class="pl-8">String <span class="text-on-surface">cacheKey</span> = <span class="text-tertiary">"app:"</span> + candidateId + <span class="text-tertiary">":"</span> + jobId;</div>
+<div class="pl-8"><span class="text-secondary-fixed-dim">if</span> (redisClient.<span class="text-primary">exists</span>(cacheKey)) <span class="text-secondary-fixed-dim">return</span> Response.<span class="text-primary">conflict</span>();</div>
+<div class="pl-8 text-outline">// Persistent commit with PostgreSQL DAO</div>
+<div class="pl-8">ApplicationRecord <span class="text-on-surface">record</span> = dao.<span class="text-primary">insertWithLock</span>(candidateId, jobId);</div>
+<div class="pl-8">redisClient.<span class="text-primary">setex</span>(cacheKey, <span class="text-secondary">3600</span>, <span class="text-tertiary">"LOCKED"</span>);</div>
+<div class="pl-8"><span class="text-secondary-fixed-dim">return</span> Response.<span class="text-primary">ok</span>(record);</div>
+<div class="pl-4">}</div>
+<div>}</div>
+</div>
+</div>
+</div>
+<!-- Live Telemetry Footer Badge -->
+<div class="px-4 py-2.5 bg-surface-container-low border-t border-outline-variant/30 flex flex-wrap items-center justify-between text-label-code-sm font-label-code-sm gap-2">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+<span class="text-tertiary font-semibold">STATUS: 200 OK</span>
+<span class="text-outline">|</span>
+<span class="text-on-surface">18ms latency</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-outline">Redis Hit:</span>
+<span class="px-1.5 py-0.5 rounded bg-tertiary/10 text-tertiary border border-tertiary/20 text-[10px]">TRUE</span>
+<span class="text-outline">|</span>
+<span class="text-outline">Pool: 8/10 active</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Scroll Down Indicator -->
+<div class="flex flex-col items-center justify-center pt-16 gap-2 opacity-70 hover:opacity-100 transition-opacity">
+<a class="flex flex-col items-center gap-2 text-on-surface-variant group" href="#about">
+<div class="w-5 h-9 rounded-full border border-outline-variant flex items-start justify-center p-1">
+<div class="w-1 h-2 bg-primary rounded-full animate-bounce"></div>
+</div>
+<span class="text-label-code-sm font-label-code-sm tracking-widest text-outline group-hover:text-primary transition-colors">SCROLL DOWN</span>
+</a>
+</div>
+</section>
+<!-- 3. SECTION 2: ABOUT ME -->
+<section class="py-20 border-t border-outline-variant/20" id="about">
+<!-- Section Header -->
+<div class="mb-12">
+<div class="text-label-code-sm font-label-code-sm text-primary tracking-widest uppercase mb-2">01 // PROFILE</div>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-on-surface">About Me</h2>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Verbatim Bio Text Block -->
+<div class="lg:col-span-7 bg-surface-container-low p-6 md:p-8 rounded-xl border border-outline-variant/30 hairline-card space-y-4">
+<div class="flex items-center gap-3 pb-3 border-b border-outline-variant/20">
+<span class="material-symbols-outlined text-primary" data-icon="account_circle">account_circle</span>
+<h3 class="text-headline-sm font-headline-sm text-on-surface font-semibold">Backend Engineering Focus</h3>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+            I'm a Java Backend Developer Intern at Tsoft Corporation Private Limited, with hands-on experience developing Java web applications. I have practical experience with Java 17, Apache Struts 2, JSP, JDBC, PostgreSQL, and Redis. I enjoy solving backend problems, designing database-driven applications, and understanding how systems work behind the scenes. I'm continuously improving my skills in REST API development and Spring Boot, with the goal of becoming a skilled backend engineer.
+          </p>
+<div class="pt-2 flex flex-wrap gap-2 text-label-code-sm font-label-code-sm">
+<span class="px-2.5 py-1 rounded bg-surface-container border border-outline-variant/40 text-on-surface">Java 17</span>
+<span class="px-2.5 py-1 rounded bg-surface-container border border-outline-variant/40 text-on-surface">Apache Struts 2</span>
+<span class="px-2.5 py-1 rounded bg-surface-container border border-outline-variant/40 text-on-surface">PostgreSQL</span>
+<span class="px-2.5 py-1 rounded bg-surface-container border border-outline-variant/40 text-on-surface">Redis</span>
+<span class="px-2.5 py-1 rounded bg-surface-container border border-outline-variant/40 text-on-surface">JDBC</span>
+<span class="px-2.5 py-1 rounded bg-surface-container border border-outline-variant/40 text-primary">Spring Boot (In Progress)</span>
+</div>
+</div>
+<!-- 4 High-Fidelity Highlight Cards -->
+<div class="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4">
+<!-- Card 1 -->
+<div class="p-5 rounded-xl bg-surface-container-low border border-outline-variant/30 hairline-card transition-all duration-200 hover:-translate-y-0.5">
+<div class="flex items-center gap-3 mb-2">
+<div class="p-2 rounded-lg bg-primary-container/20 text-primary">
+<span class="material-symbols-outlined text-lg" data-icon="terminal">terminal</span>
+</div>
+<h4 class="text-headline-sm font-headline-sm text-on-surface text-base">Java Backend Development</h4>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              Java 17, Struts 2, JDBC, REST endpoints, clean architecture.
+            </p>
+</div>
+<!-- Card 2 -->
+<div class="p-5 rounded-xl bg-surface-container-low border border-outline-variant/30 hairline-card transition-all duration-200 hover:-translate-y-0.5">
+<div class="flex items-center gap-3 mb-2">
+<div class="p-2 rounded-lg bg-tertiary/10 text-tertiary">
+<span class="material-symbols-outlined text-lg" data-icon="database">database</span>
+</div>
+<h4 class="text-headline-sm font-headline-sm text-on-surface text-base">Database Management</h4>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              PostgreSQL relational design, MySQL queries, Redis low-latency cache layer.
+            </p>
+</div>
+<!-- Card 3 -->
+<div class="p-5 rounded-xl bg-surface-container-low border border-outline-variant/30 hairline-card transition-all duration-200 hover:-translate-y-0.5">
+<div class="flex items-center gap-3 mb-2">
+<div class="p-2 rounded-lg bg-secondary-container/20 text-secondary">
+<span class="material-symbols-outlined text-lg" data-icon="lan">lan</span>
+</div>
+<h4 class="text-headline-sm font-headline-sm text-on-surface text-base">Web Application Development</h4>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              Full request lifecycle, MVC architecture, DAO patterns, JSP, Tomcat.
+            </p>
+</div>
+<!-- Card 4 -->
+<div class="p-5 rounded-xl bg-surface-container-low border border-outline-variant/30 hairline-card transition-all duration-200 hover:-translate-y-0.5">
+<div class="flex items-center gap-3 mb-2">
+<div class="p-2 rounded-lg bg-primary/20 text-primary">
+<span class="material-symbols-outlined text-lg" data-icon="security">security</span>
+</div>
+<h4 class="text-headline-sm font-headline-sm text-on-surface text-base">Problem Solving</h4>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              Algorithmic efficiency, debugging complex transactions, BCrypt security.
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. SECTION 3: TECHNICAL SKILLS -->
+<section class="py-20 border-t border-outline-variant/20" id="skills">
+<!-- Section Header -->
+<div class="mb-12">
+<div class="text-label-code-sm font-label-code-sm text-primary tracking-widest uppercase mb-2">02 // TECH STACK</div>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-on-surface">Technical Skills</h2>
+<p class="text-body-md font-body-md text-on-surface-variant mt-2 max-w-2xl">
+          Categorized toolset focused on robust backend engineering and distributed data management.
+        </p>
+</div>
+<!-- Categorized Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Category 1: Programming -->
+<div class="p-6 rounded-xl bg-surface-container-low border border-outline-variant/30 hairline-card flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-3 border-b border-outline-variant/20 mb-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="code_blocks">code_blocks</span>
+<h3 class="text-headline-sm font-headline-sm text-on-surface font-semibold">Programming</h3>
+</div>
+<span class="text-label-code-sm font-label-code-sm text-outline">01</span>
+</div>
+<div class="space-y-3">
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container border border-outline-variant/20">
+<span class="text-body-md font-body-md text-on-surface font-medium">Java (Core &amp; Advanced)</span>
+<span class="px-2 py-0.5 rounded text-label-code-sm font-label-code-sm bg-primary-container/20 text-primary border border-primary/30">Primary</span>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container border border-outline-variant/20">
+<span class="text-body-md font-body-md text-on-surface font-medium">Python</span>
+<span class="px-2 py-0.5 rounded text-label-code-sm font-label-code-sm bg-surface-container-high text-outline border border-outline-variant/30">Basics</span>
+</div>
+</div>
+</div>
+<div class="pt-4 mt-4 border-t border-outline-variant/20 text-label-code-sm font-label-code-sm text-outline">
+            JVM memory model, Multi-threading basics
+          </div>
+</div>
+<!-- Category 2: Backend (Spans 2 cols on desktop) -->
+<div class="p-6 rounded-xl bg-surface-container-low border border-outline-variant/30 hairline-card md:col-span-2 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-3 border-b border-outline-variant/20 mb-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary" data-icon="memory">memory</span>
+<h3 class="text-headline-sm font-headline-sm text-on-surface font-semibold">Backend Architecture &amp; Frameworks</h3>
+</div>
+<span class="text-label-code-sm font-label-code-sm text-outline">02</span>
+</div>
+<div class="flex flex-wrap gap-2.5">
+<div class="px-3 py-2 rounded-lg bg-surface-container border border-outline-variant/30 text-on-surface text-label-code-md font-label-code-md flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Core Java (OOP, Collections)
+              </div>
+<div class="px-3 py-2 rounded-lg bg-surface-container border border-outline-variant/30 text-on-surface text-label-code-md font-label-code-md flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> JDBC Connection Pools
+              </div>
+<div class="px-3 py-2 rounded-lg bg-surface-container border border-outline-variant/30 text-on-surface text-label-code-md font-label-code-md flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Apache Struts 2
+              </div>
+<div class="px-3 py-2 rounded-lg bg-surface-container border border-outline-variant/30 text-on-surface text-label-code-md font-label-code-md flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> JSP &amp; Servlets
+              </div>
+<div class="px-3 py-2 rounded-lg bg-surface-container border border-outline-variant/30 text-on-surface text-label-code-md font-label-code-md flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> MVC Architecture
+              </div>
+<div class="px-3 py-2 rounded-lg bg-surface-container border border-outline-variant/30 text-on-surface text-label-code-md font-label-code-md flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> DAO Pattern
+              </div>
+<div class="px-3 py-2 rounded-lg bg-surface-container border border-outline-variant/30 text-on-surface text-label-code-md font-label-code-md flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> REST API Development
+              </div>
+<div class="px-3 py-2 rounded-lg bg-surface-container border border-tertiary/40 text-tertiary text-label-code-md font-label-code-md flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span> Spring Boot (Learning)
+              </div>
+</div>
+</div>
+<div class="pt-4 mt-4 border-t border-outline-variant/20 text-label-code-sm font-label-code-sm text-outline">
+            Focus: Stateless REST, Separation of concerns, Safe concurrency
+          </div>
+</div>
+<!-- Category 3: Database & Caching -->
+<div class="p-6 rounded-xl bg-surface-container-low border border-outline-variant/30 hairline-card flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-3 border-b border-outline-variant/20 mb-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" data-icon="storage">storage</span>
+<h3 class="text-headline-sm font-headline-sm text-on-surface font-semibold">Database &amp; Caching</h3>
+</div>
+<span class="text-label-code-sm font-label-code-sm text-outline">03</span>
+</div>
+<div class="space-y-3">
+<div class="p-3 rounded-lg bg-surface-container border border-outline-variant/20 flex items-center justify-between">
+<div>
+<div class="text-body-md font-body-md text-on-surface font-medium">PostgreSQL</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant">Relational schemas, constraints &amp; indexes</div>
+</div>
+<span class="material-symbols-outlined text-outline" data-icon="database">database</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container border border-outline-variant/20 flex items-center justify-between">
+<div>
+<div class="text-body-md font-body-md text-on-surface font-medium">MySQL</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant">Complex joins &amp; transaction management</div>
+</div>
+<span class="material-symbols-outlined text-outline" data-icon="table_chart">table_chart</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container border border-outline-variant/20 flex items-center justify-between">
+<div>
+<div class="text-body-md font-body-md text-tertiary font-medium">Redis</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant">In-memory cache, TTLs, session storage</div>
+</div>
+<span class="material-symbols-outlined text-tertiary" data-icon="bolt">bolt</span>
+</div>
+</div>
+</div>
+<div class="pt-4 mt-4 border-t border-outline-variant/20 text-label-code-sm font-label-code-sm text-outline">
+            Sub-millisecond reads via Redis, ACID compliance in PostgreSQL
+          </div>
+</div>
+<!-- Category 4: Tools & Ecosystem -->
+<div class="p-6 rounded-xl bg-surface-container-low border border-outline-variant/30 hairline-card flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-3 border-b border-outline-variant/20 mb-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="build">build</span>
+<h3 class="text-headline-sm font-headline-sm text-on-surface font-semibold">Tools &amp; Ecosystem</h3>
+</div>
+<span class="text-label-code-sm font-label-code-sm text-outline">04</span>
+</div>
+<div class="grid grid-cols-2 gap-2 text-label-code-md font-label-code-md">
+<div class="p-2.5 rounded-lg bg-surface-container border border-outline-variant/20 text-on-surface">Git</div>
+<div class="p-2.5 rounded-lg bg-surface-container border border-outline-variant/20 text-on-surface">GitHub</div>
+<div class="p-2.5 rounded-lg bg-surface-container border border-outline-variant/20 text-on-surface">Maven</div>
+<div class="p-2.5 rounded-lg bg-surface-container border border-outline-variant/20 text-on-surface">Apache Tomcat</div>
+<div class="p-2.5 rounded-lg bg-surface-container border border-outline-variant/20 text-on-surface">Eclipse IDE</div>
+<div class="p-2.5 rounded-lg bg-surface-container border border-outline-variant/20 text-on-surface">VS Code</div>
+</div>
+</div>
+<div class="pt-4 mt-4 border-t border-outline-variant/20 text-label-code-sm font-label-code-sm text-outline">
+            Build automation, semantic commits &amp; server deployments
+          </div>
+</div>
+<!-- Category 5: Frontend Foundations -->
+<div class="p-6 rounded-xl bg-surface-container-low border border-outline-variant/30 hairline-card flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-3 border-b border-outline-variant/20 mb-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" data-icon="web">web</span>
+<h3 class="text-headline-sm font-headline-sm text-on-surface font-semibold">Frontend Foundations</h3>
+</div>
+<span class="text-label-code-sm font-label-code-sm text-outline">05</span>
+</div>
+<div class="space-y-2.5">
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container border border-outline-variant/20">
+<span class="text-body-md font-body-md text-on-surface">HTML5 Semantic Structure</span>
+<span class="text-label-code-sm font-label-code-sm text-outline">Layouts</span>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container border border-outline-variant/20">
+<span class="text-body-md font-body-md text-on-surface">CSS3 Styling &amp; Flexbox</span>
+<span class="text-label-code-sm font-label-code-sm text-outline">Responsive</span>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container border border-outline-variant/20">
+<span class="text-body-md font-body-md text-on-surface">JavaScript</span>
+<span class="px-2 py-0.5 rounded text-label-code-sm font-label-code-sm bg-surface-container-high text-outline border border-outline-variant/30">Basics</span>
+</div>
+</div>
+</div>
+<div class="pt-4 mt-4 border-t border-outline-variant/20 text-label-code-sm font-label-code-sm text-outline">
+            Client-side form validation and DOM manipulation
+          </div>
+</div>
+</div>
+</section>
+<!-- 5. SECTION 4: EXPERIENCE -->
+<section class="py-20 border-t border-outline-variant/20" id="experience">
+<!-- Section Header -->
+<div class="mb-12">
+<div class="text-label-code-sm font-label-code-sm text-primary tracking-widest uppercase mb-2">03 // CAREER JOURNEY</div>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-on-surface">Work Experience</h2>
+</div>
+<!-- Timeline Card -->
+<div class="relative pl-6 md:pl-8 border-l border-outline-variant/40 ml-2 md:ml-4">
+<!-- Glowing Timeline Node -->
+<div class="absolute -left-2.5 top-1.5 w-5 h-5 rounded-full bg-surface-container-low border-2 border-primary flex items-center justify-center">
+<div class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></div>
+</div>
+<div class="bg-surface-container-low p-6 md:p-8 rounded-xl border border-outline-variant/30 hairline-card space-y-6">
+<!-- Card Header -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-outline-variant/20">
+<div>
+<div class="flex items-center gap-2">
+<h3 class="text-headline-md font-headline-md text-on-surface font-semibold">Tsoft Corporation Private Limited</h3>
+<span class="px-2 py-0.5 rounded bg-tertiary/10 text-tertiary border border-tertiary/30 text-label-code-sm font-label-code-sm">Active</span>
+</div>
+<div class="text-body-lg font-body-lg text-primary font-medium mt-1">Java Backend Developer Intern</div>
+</div>
+<div class="flex flex-col md:items-end text-label-code-sm font-label-code-sm text-on-surface-variant gap-1">
+<span class="px-3 py-1 rounded-full bg-surface-container border border-outline-variant/40 text-on-surface font-medium">May 2026 – Present</span>
+<span class="flex items-center gap-1 text-outline">
+<span class="material-symbols-outlined text-xs" data-icon="location_on">location_on</span>
+                Tamil Nadu, India
+              </span>
+</div>
+</div>
+<!-- Bullet Checklist -->
+<div class="space-y-3">
+<div class="text-label-code-sm font-label-code-sm text-outline uppercase tracking-wider">Key Responsibilities &amp; Impact</div>
+<ul class="space-y-2.5 text-body-md font-body-md text-on-surface-variant">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-base mt-1" data-icon="check_circle">check_circle</span>
+<span>Working on Java backend development tasks.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-base mt-1" data-icon="check_circle">check_circle</span>
+<span>Practising debugging and improving Java programming skills.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-base mt-1" data-icon="check_circle">check_circle</span>
+<span>Working with application logic and backend technologies.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-base mt-1" data-icon="check_circle">check_circle</span>
+<span>Using Git and GitHub for version control.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-base mt-1" data-icon="check_circle">check_circle</span>
+<span>Learning and improving backend development practices.</span>
+</li>
+</ul>
+</div>
+<!-- Tech Stack Chips -->
+<div class="pt-4 border-t border-outline-variant/20 flex flex-wrap items-center gap-2">
+<span class="text-label-code-sm font-label-code-sm text-outline mr-2">TECH STACK:</span>
+<span class="px-2.5 py-1 rounded bg-surface-container border border-outline-variant/40 text-on-surface text-label-code-sm font-label-code-sm">Java 17</span>
+<span class="px-2.5 py-1 rounded bg-surface-container border border-outline-variant/40 text-on-surface text-label-code-sm font-label-code-sm">Struts 2</span>
+<span class="px-2.5 py-1 rounded bg-surface-container border border-outline-variant/40 text-on-surface text-label-code-sm font-label-code-sm">JDBC</span>
+<span class="px-2.5 py-1 rounded bg-surface-container border border-outline-variant/40 text-on-surface text-label-code-sm font-label-code-sm">PostgreSQL</span>
+<span class="px-2.5 py-1 rounded bg-surface-container border border-outline-variant/40 text-on-surface text-label-code-sm font-label-code-sm">Git</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. SECTION 5: FEATURED PROJECTS (Crucial Section) -->
+<section class="py-20 border-t border-outline-variant/20" id="projects">
+<!-- Section Header -->
+<div class="mb-14">
+<div class="text-label-code-sm font-label-code-sm text-primary tracking-widest uppercase mb-2">04 // SELECTED WORKS</div>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-on-surface">Featured Projects</h2>
+<p class="text-body-md font-body-md text-on-surface-variant mt-2 max-w-2xl">
+          Production-grade backend architectures, transactional flows, and high-performance caching systems.
+        </p>
+</div>
+<div class="space-y-16">
+<!-- PROJECT 1: JOB PORTAL SYSTEM -->
+<div class="p-6 md:p-8 rounded-2xl bg-surface-container-low border border-outline-variant/30 hairline-card space-y-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Left Project Info -->
+<div class="lg:col-span-6 space-y-6">
+<div class="space-y-2">
+<div class="text-label-code-sm font-label-code-sm text-primary">CASE STUDY // 01</div>
+<h3 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-on-surface font-semibold">Job Portal System</h3>
+<p class="text-body-lg font-body-lg text-on-surface-variant leading-relaxed">
+                  Developed a Java-based recruitment platform connecting job seekers and recruiters through a centralized job portal.
+                </p>
+</div>
+<!-- Tech Stack Badges -->
+<div class="flex flex-wrap gap-2">
+<span class="px-2.5 py-1 rounded bg-surface-container border border-outline-variant/40 text-on-surface text-label-code-sm font-label-code-sm">Java 17</span>
+<span class="px-2.5 py-1 rounded bg-surface-container border border-outline-variant/40 text-on-surface text-label-code-sm font-label-code-sm">Apache Struts 2</span>
+<span class="px-2.5 py-1 rounded bg-surface-container border border-outline-variant/40 text-on-surface text-label-code-sm font-label-code-sm">JSP</span>
+<span class="px-2.5 py-1 rounded bg-surface-container border border-outline-variant/40 text-on-surface text-label-code-sm font-label-code-sm">JDBC</span>
+<span class="px-2.5 py-1 rounded bg-surface-container border border-outline-variant/40 text-on-surface text-label-code-sm font-label-code-sm">PostgreSQL</span>
+<span class="px-2.5 py-1 rounded bg-surface-container border border-outline-variant/40 text-tertiary text-label-code-sm font-label-code-sm">Redis</span>
+<span class="px-2.5 py-1 rounded bg-surface-container border border-outline-variant/40 text-on-surface text-label-code-sm font-label-code-sm">Maven</span>
+<span class="px-2.5 py-1 rounded bg-surface-container border border-outline-variant/40 text-on-surface text-label-code-sm font-label-code-sm">Tomcat</span>
+</div>
+<!-- Key Features List -->
+<div class="space-y-3 pt-2">
+<div class="text-label-code-sm font-label-code-sm text-outline font-semibold uppercase">Engineered Features</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-body-sm font-body-sm text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-xs text-primary" data-icon="check">check</span>
+<span>User Registration and Login</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-xs text-primary" data-icon="lock">lock</span>
+<span>BCrypt Password Hashing</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-xs text-primary" data-icon="vpn_key">vpn_key</span>
+<span>Session Management</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-xs text-primary" data-icon="shield">shield</span>
+<span>Role-Based Access Control</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-xs text-primary" data-icon="search">search</span>
+<span>Job Search and Application</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-xs text-tertiary" data-icon="bolt">bolt</span>
+<span>Duplicate Application Prevention</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-xs text-primary" data-icon="timeline">timeline</span>
+<span>Application Status Tracking</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-xs text-primary" data-icon="manage_accounts">manage_accounts</span>
+<span>Recruiter Job Management</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-xs text-primary" data-icon="architecture">architecture</span>
+<span>MVC and DAO Architecture</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-xs text-primary" data-icon="database">database</span>
+<span>PostgreSQL Database Integration</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-xs text-tertiary" data-icon="speed">speed</span>
+<span>Redis Caching</span>
+</div>
+</div>
+</div>
+<!-- Button CTA -->
+<div class="pt-4">
+<a class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-surface-container border border-outline-variant/40 hover:border-primary/50 text-on-surface hover:text-primary transition-all duration-200 text-label-ui font-label-ui font-medium" href="https://github.com" rel="noreferrer" target="_blank">
+<span class="material-symbols-outlined text-sm" data-icon="terminal">terminal</span>
+<span>GitHub Repository</span>
+</a>
+</div>
+</div>
+<!-- Right Architectural UI Preview Mockup -->
+<div class="lg:col-span-6 w-full">
+<div class="rounded-xl bg-surface-container-lowest border border-outline-variant/40 p-4 md:p-5 shadow-2xl space-y-4">
+<div class="flex items-center justify-between pb-3 border-b border-outline-variant/20">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary inline-block"></span>
+<span class="text-label-code-sm font-label-code-sm text-on-surface font-medium">JobPortal // Admin &amp; Recruiter Telemetry</span>
+</div>
+<span class="text-label-code-sm font-label-code-sm text-tertiary">Live System</span>
+</div>
+<!-- Metrics Dashboard Panel -->
+<div class="grid grid-cols-3 gap-3">
+<div class="p-3 rounded-lg bg-surface-container border border-outline-variant/20">
+<div class="text-label-code-sm font-label-code-sm text-outline">Active Postings</div>
+<div class="text-headline-md font-headline-md text-on-surface font-semibold mt-1">142</div>
+</div>
+<div class="p-3 rounded-lg bg-surface-container border border-outline-variant/20">
+<div class="text-label-code-sm font-label-code-sm text-outline">Processed Apps</div>
+<div class="text-headline-md font-headline-md text-primary font-semibold mt-1">1,894</div>
+</div>
+<div class="p-3 rounded-lg bg-surface-container border border-outline-variant/20">
+<div class="text-label-code-sm font-label-code-sm text-tertiary">Redis Hit Rate</div>
+<div class="text-headline-md font-headline-md text-tertiary font-semibold mt-1">94.8%</div>
+</div>
+</div>
+<!-- Mock Job Feed -->
+<div class="space-y-2 pt-2">
+<div class="text-label-code-sm font-label-code-sm text-outline">ACTIVE PIPELINE STREAM</div>
+<div class="p-3 rounded-lg bg-surface-container-low border border-outline-variant/30 flex items-center justify-between">
+<div>
+<div class="text-body-md font-body-md text-on-surface font-medium">Senior Backend Engineer</div>
+<div class="text-label-code-sm font-label-code-sm text-outline">ID: #JOB-8841 • PostgreSQL Pool: 4 conn</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-tertiary/10 text-tertiary border border-tertiary/20 text-label-code-sm font-label-code-sm">Reviewing</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low border border-outline-variant/30 flex items-center justify-between">
+<div>
+<div class="text-body-md font-body-md text-on-surface font-medium">Java Systems Architect</div>
+<div class="text-label-code-sm font-label-code-sm text-outline">ID: #JOB-9023 • Redis Cache Validated</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-primary-container/20 text-primary border border-primary/20 text-label-code-sm font-label-code-sm">Interviewed</span>
+</div>
+</div>
+<!-- Cache Log Console -->
+<div class="p-3 rounded-lg bg-[#080B12] border border-outline-variant/20 text-label-code-sm font-label-code-sm text-outline space-y-1">
+<div>[REDIS] GET candidate_session:a9f24b -&gt; HIT (0.42ms)</div>
+<div>[BCRYPT] salt_rounds=12 verified for user_id=4091</div>
+<div class="text-tertiary">[DAO] Application record saved to 'job_applications' (id=1894)</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- PROJECT 2: RAILWAY RESERVATION SYSTEM -->
+<div class="p-6 md:p-8 rounded-2xl bg-surface-container-low border border-outline-variant/30 hairline-card space-y-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Left Project Info -->
+<div class="lg:col-span-6 space-y-6">
+<div class="space-y-2">
+<div class="text-label-code-sm font-label-code-sm text-primary">CASE STUDY // 02</div>
+<h3 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-on-surface font-semibold">Railway Reservation System</h3>
+<p class="text-body-lg font-body-lg text-on-surface-variant leading-relaxed">
+                  Developed a web-based railway reservation system with separate user and admin functionalities.
+                </p>
+</div>
+<!-- Tech Stack Badges -->
+<div class="flex flex-wrap gap-2">
+<span class="px-2.5 py-1 rounded bg-surface-container border border-outline-variant/40 text-on-surface text-label-code-sm font-label-code-sm">Java</span>
+<span class="px-2.5 py-1 rounded bg-surface-container border border-outline-variant/40 text-on-surface text-label-code-sm font-label-code-sm">Apache Struts 2</span>
+<span class="px-2.5 py-1 rounded bg-surface-container border border-outline-variant/40 text-on-surface text-label-code-sm font-label-code-sm">JSP</span>
+<span class="px-2.5 py-1 rounded bg-surface-container border border-outline-variant/40 text-on-surface text-label-code-sm font-label-code-sm">JDBC</span>
+<span class="px-2.5 py-1 rounded bg-surface-container border border-outline-variant/40 text-on-surface text-label-code-sm font-label-code-sm">PostgreSQL</span>
+<span class="px-2.5 py-1 rounded bg-surface-container border border-outline-variant/40 text-tertiary text-label-code-sm font-label-code-sm">Redis</span>
+<span class="px-2.5 py-1 rounded bg-surface-container border border-outline-variant/40 text-on-surface text-label-code-sm font-label-code-sm">Maven</span>
+<span class="px-2.5 py-1 rounded bg-surface-container border border-outline-variant/40 text-on-surface text-label-code-sm font-label-code-sm">GitHub</span>
+</div>
+<!-- Key Features List -->
+<div class="space-y-3 pt-2">
+<div class="text-label-code-sm font-label-code-sm text-outline font-semibold uppercase">Engineered Features</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-body-sm font-body-sm text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-xs text-primary" data-icon="vpn_key">vpn_key</span>
+<span>User Authentication</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-xs text-primary" data-icon="directions_transit">directions_transit</span>
+<span>Train Search</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-xs text-primary" data-icon="admin_panel_settings">admin_panel_settings</span>
+<span>Train Management</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-xs text-primary" data-icon="confirmation_number">confirmation_number</span>
+<span>Ticket Booking</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-xs text-primary" data-icon="cancel">cancel</span>
+<span>Ticket Cancellation</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-xs text-tertiary" data-icon="pin">pin</span>
+<span>PNR Generation and Search</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-xs text-tertiary" data-icon="event_seat">event_seat</span>
+<span>Seat Availability Validation</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-xs text-primary" data-icon="sync_alt">sync_alt</span>
+<span>Transaction Management</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-xs text-primary" data-icon="lock">lock</span>
+<span>BCrypt Password Hashing</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-xs text-tertiary" data-icon="speed">speed</span>
+<span>Redis Caching</span>
+</div>
+</div>
+</div>
+<!-- Button CTA -->
+<div class="pt-4">
+<a class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-surface-container border border-outline-variant/40 hover:border-primary/50 text-on-surface hover:text-primary transition-all duration-200 text-label-ui font-label-ui font-medium" href="https://github.com" rel="noreferrer" target="_blank">
+<span class="material-symbols-outlined text-sm" data-icon="terminal">terminal</span>
+<span>GitHub Repository</span>
+</a>
+</div>
+</div>
+<!-- Right Mockup: Booking Engine & PNR Simulator -->
+<div class="lg:col-span-6 w-full">
+<div class="rounded-xl bg-surface-container-lowest border border-outline-variant/40 p-4 md:p-5 shadow-2xl space-y-4">
+<div class="flex items-center justify-between pb-3 border-b border-outline-variant/20">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary inline-block"></span>
+<span class="text-label-code-sm font-label-code-sm text-on-surface font-medium">Ticket Engine // PNR Dispatcher</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container text-outline text-[11px] font-label-code-sm">ACID ISOLATION: SERIALIZABLE</span>
+</div>
+<!-- PNR Card Simulator -->
+<div class="p-4 rounded-lg bg-surface-container-low border border-outline-variant/30 space-y-3">
+<div class="flex items-center justify-between">
+<div>
+<div class="text-label-code-sm font-label-code-sm text-outline">GENERATED PNR</div>
+<div class="text-headline-md font-headline-md text-on-surface font-mono font-bold tracking-widest text-primary">8492-3019-11</div>
+</div>
+<span class="px-2.5 py-1 rounded bg-tertiary/10 text-tertiary border border-tertiary/30 text-label-code-sm font-label-code-sm font-medium">CONFIRMED (CNF)</span>
+</div>
+<div class="grid grid-cols-2 gap-2 text-label-code-sm font-label-code-sm pt-2 border-t border-outline-variant/20 text-on-surface-variant">
+<div>Train: <span class="text-on-surface">12675 Kovai Express</span></div>
+<div>Coach/Seat: <span class="text-tertiary">B3 - 42 (MB)</span></div>
+<div>Source: <span class="text-on-surface">Chennai Central (MAS)</span></div>
+<div>Destination: <span class="text-on-surface">Coimbatore (CBE)</span></div>
+</div>
+</div>
+<!-- Seat Inventory Matrix Visual -->
+<div class="p-3 rounded-lg bg-surface-container border border-outline-variant/20 space-y-2">
+<div class="flex items-center justify-between text-label-code-sm font-label-code-sm">
+<span class="text-outline">SEAT ALLOCATION INVENTORY</span>
+<span class="text-tertiary font-mono">18 / 72 SEATS REMAINING</span>
+</div>
+<!-- Seat mini bars -->
+<div class="grid grid-cols-12 gap-1 py-1">
+<div class="h-2 rounded-sm bg-tertiary"></div>
+<div class="h-2 rounded-sm bg-tertiary"></div>
+<div class="h-2 rounded-sm bg-outline-variant/60"></div>
+<div class="h-2 rounded-sm bg-tertiary"></div>
+<div class="h-2 rounded-sm bg-outline-variant/60"></div>
+<div class="h-2 rounded-sm bg-tertiary"></div>
+<div class="h-2 rounded-sm bg-outline-variant/60"></div>
+<div class="h-2 rounded-sm bg-outline-variant/60"></div>
+<div class="h-2 rounded-sm bg-tertiary"></div>
+<div class="h-2 rounded-sm bg-outline-variant/60"></div>
+<div class="h-2 rounded-sm bg-tertiary"></div>
+<div class="h-2 rounded-sm bg-tertiary"></div>
+</div>
+</div>
+<!-- Console transaction log -->
+<div class="p-3 rounded-lg bg-[#080B12] border border-outline-variant/20 text-label-code-sm font-label-code-sm text-outline space-y-1">
+<div>[TRANSACTION] BEGIN ISOLATION LEVEL READ COMMITTED</div>
+<div>[POSTGRES] SELECT seats FROM train_inventory WHERE train_id=12675 FOR UPDATE</div>
+<div class="text-tertiary">[COMMIT] PNR 8492301911 persisted. Notification fired.</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. SECTION 6: EDUCATION -->
+<section class="py-20 border-t border-outline-variant/20" id="education">
+<!-- Section Header -->
+<div class="mb-12">
+<div class="text-label-code-sm font-label-code-sm text-primary tracking-widest uppercase mb-2">05 // ACADEMICS</div>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-on-surface">Education &amp; Background</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Card 1: B.Tech -->
+<div class="p-6 md:p-8 rounded-xl bg-surface-container-low border border-outline-variant/30 hairline-card flex flex-col justify-between space-y-6">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full bg-primary-container/20 text-primary border border-primary/30 text-label-code-sm font-label-code-sm">Undergraduate Degree</span>
+<span class="text-label-code-sm font-label-code-sm text-outline">2021 – 2025</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-on-surface font-semibold">B.Tech – Artificial Intelligence and Data Science</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">
+              Dhanalakshmi Srinivasan College of Engineering, Coimbatore
+            </p>
+</div>
+<div class="pt-4 border-t border-outline-variant/20 flex items-center justify-between text-label-code-sm font-label-code-sm">
+<span class="text-outline">Academic Performance:</span>
+<span class="px-3 py-1 rounded bg-surface-container border border-outline-variant/40 text-tertiary font-semibold">CGPA: 7.8</span>
+</div>
+</div>
+<!-- Card 2: Java Full Stack Training -->
+<div class="p-6 md:p-8 rounded-xl bg-surface-container-low border border-outline-variant/30 hairline-card flex flex-col justify-between space-y-6">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full bg-tertiary/10 text-tertiary border border-tertiary/30 text-label-code-sm font-label-code-sm">Professional Bootcamp</span>
+<span class="text-label-code-sm font-label-code-sm text-outline">6 Months Duration</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-on-surface font-semibold">Java Full Stack Development Training</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">
+              Freshkite, Cuddalore, Tamil Nadu
+            </p>
+</div>
+<div class="pt-4 border-t border-outline-variant/20 flex items-center justify-between text-label-code-sm font-label-code-sm">
+<span class="text-outline">Program Scope:</span>
+<span class="text-on-surface">Intensive hands-on Java, enterprise frameworks &amp; databases</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. SECTION 7: CERTIFICATIONS -->
+<section class="py-20 border-t border-outline-variant/20" id="certifications">
+<!-- Section Header -->
+<div class="mb-12">
+<div class="text-label-code-sm font-label-code-sm text-primary tracking-widest uppercase mb-2">06 // CREDENTIALS</div>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-on-surface">Certifications</h2>
+</div>
+<!-- Grid of 3 Verified Certifications -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Card 1: Core Python -->
+<div class="p-6 rounded-xl bg-surface-container-low border border-outline-variant/30 hairline-card flex flex-col justify-between space-y-4">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="verified">verified</span>
+<span class="text-label-code-sm font-label-code-sm text-outline">2024</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface font-semibold">Core Python</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              Coregenic IT Solution
+            </p>
+</div>
+<div class="pt-3 border-t border-outline-variant/20 flex items-center justify-between text-label-code-sm font-label-code-sm text-outline">
+<span>Credential ID Verified</span>
+<span class="material-symbols-outlined text-xs text-tertiary" data-icon="check_circle">check_circle</span>
+</div>
+</div>
+<!-- Card 2: Artificial Intelligence -->
+<div class="p-6 rounded-xl bg-surface-container-low border border-outline-variant/30 hairline-card flex flex-col justify-between space-y-4">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="verified">verified</span>
+<span class="text-label-code-sm font-label-code-sm text-outline">2024</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface font-semibold">Artificial Intelligence</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              AICRA
+            </p>
+</div>
+<div class="pt-3 border-t border-outline-variant/20 flex items-center justify-between text-label-code-sm font-label-code-sm text-outline">
+<span>Credential ID Verified</span>
+<span class="material-symbols-outlined text-xs text-tertiary" data-icon="check_circle">check_circle</span>
+</div>
+</div>
+<!-- Card 3: Data Science -->
+<div class="p-6 rounded-xl bg-surface-container-low border border-outline-variant/30 hairline-card flex flex-col justify-between space-y-4">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="verified">verified</span>
+<span class="text-label-code-sm font-label-code-sm text-outline">2024</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface font-semibold">Data Science</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              Techvolt Software Pvt. Ltd.
+            </p>
+</div>
+<div class="pt-3 border-t border-outline-variant/20 flex items-center justify-between text-label-code-sm font-label-code-sm text-outline">
+<span>Credential ID Verified</span>
+<span class="material-symbols-outlined text-xs text-tertiary" data-icon="check_circle">check_circle</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 9. SECTION 8: CONTACT -->
+<section class="py-20 border-t border-outline-variant/20" id="contact">
+<!-- Section Header -->
+<div class="mb-12">
+<div class="text-label-code-sm font-label-code-sm text-primary tracking-widest uppercase mb-2">07 // GET IN TOUCH</div>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-on-surface">Let's Build Something Great Together.</h2>
+<p class="text-body-md font-body-md text-on-surface-variant mt-2 max-w-2xl">
+          I'm open to Java Backend Developer and Software Engineer opportunities. Feel free to connect with me.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Left Column: Direct Info -->
+<div class="lg:col-span-5 space-y-6">
+<div class="p-6 rounded-xl bg-surface-container-low border border-outline-variant/30 hairline-card space-y-6">
+<h3 class="text-headline-sm font-headline-sm text-on-surface font-semibold">Contact Information</h3>
+<div class="space-y-4">
+<!-- Email -->
+<div class="flex items-start gap-3">
+<div class="p-2 rounded-lg bg-surface-container text-primary">
+<span class="material-symbols-outlined text-lg" data-icon="mail">mail</span>
+</div>
+<div>
+<div class="text-label-code-sm font-label-code-sm text-outline">EMAIL DIRECTLY</div>
+<a class="text-body-md font-body-md text-on-surface hover:text-primary transition-colors" href="mailto:ranjithhari2004@gmail.com">
+                    ranjithhari2004@gmail.com
+                  </a>
+</div>
+</div>
+<!-- Location -->
+<div class="flex items-start gap-3">
+<div class="p-2 rounded-lg bg-surface-container text-primary">
+<span class="material-symbols-outlined text-lg" data-icon="location_on">location_on</span>
+</div>
+<div>
+<div class="text-label-code-sm font-label-code-sm text-outline">LOCATION</div>
+<div class="text-body-md font-body-md text-on-surface">
+                    Kumbakonam, Tamil Nadu, India
+                  </div>
+</div>
+</div>
+<!-- Social Profiles -->
+<div class="flex items-start gap-3">
+<div class="p-2 rounded-lg bg-surface-container text-primary">
+<span class="material-symbols-outlined text-lg" data-icon="hub">hub</span>
+</div>
+<div>
+<div class="text-label-code-sm font-label-code-sm text-outline">PROFESSIONAL NETWORKS</div>
+<div class="flex items-center gap-4 mt-1">
+<a class="text-label-code-md font-label-code-md text-on-surface hover:text-primary transition-colors" href="https://linkedin.com" rel="noreferrer" target="_blank">LinkedIn</a>
+<span class="text-outline">•</span>
+<a class="text-label-code-md font-label-code-md text-on-surface hover:text-primary transition-colors" href="https://github.com" rel="noreferrer" target="_blank">GitHub</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Response Pledge -->
+<div class="p-3.5 rounded-lg bg-surface-container border border-outline-variant/30 flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary text-base" data-icon="schedule">schedule</span>
+<span class="text-label-code-sm font-label-code-sm text-on-surface-variant">Typically replies within 24 hours.</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Engineering Contact Form -->
+<div class="lg:col-span-7">
+<form class="p-6 md:p-8 rounded-xl bg-surface-container-low border border-outline-variant/30 hairline-card space-y-4" onsubmit="event.preventDefault(); alert('Message sent successfully! Hariprasath will reply soon.');">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="space-y-1.5">
+<label class="text-label-code-sm font-label-code-sm text-on-surface-variant">YOUR NAME</label>
+<input class="w-full px-3.5 py-2.5 rounded-lg bg-surface-container-lowest border border-outline-variant/40 text-on-surface placeholder:text-outline text-body-md font-body-md focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" placeholder="e.g. Alex Henderson" required="" type="text"/>
+</div>
+<div class="space-y-1.5">
+<label class="text-label-code-sm font-label-code-sm text-on-surface-variant">YOUR EMAIL</label>
+<input class="w-full px-3.5 py-2.5 rounded-lg bg-surface-container-lowest border border-outline-variant/40 text-on-surface placeholder:text-outline text-body-md font-body-md focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" placeholder="alex@company.com" required="" type="email"/>
+</div>
+</div>
+<div class="space-y-1.5">
+<label class="text-label-code-sm font-label-code-sm text-on-surface-variant">SUBJECT</label>
+<input class="w-full px-3.5 py-2.5 rounded-lg bg-surface-container-lowest border border-outline-variant/40 text-on-surface placeholder:text-outline text-body-md font-body-md focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" placeholder="Java Backend Opportunity / Full-time Role" required="" type="text"/>
+</div>
+<div class="space-y-1.5">
+<label class="text-label-code-sm font-label-code-sm text-on-surface-variant">MESSAGE</label>
+<textarea class="w-full px-3.5 py-2.5 rounded-lg bg-surface-container-lowest border border-outline-variant/40 text-on-surface placeholder:text-outline text-body-md font-body-md focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all resize-none" placeholder="Hi Hariprasath, I reviewed your portfolio and would like to discuss..." required="" rows="4"></textarea>
+</div>
+<button class="w-full py-3 rounded-lg bg-primary-container text-on-surface text-label-ui font-label-ui font-semibold shadow-[0_0_20px_rgba(128,131,255,0.3)] hover:bg-inverse-primary border border-primary/30 flex items-center justify-center gap-2 transition-all duration-200 active:scale-95" type="submit">
+<span>Send Message</span>
+<span class="material-symbols-outlined text-sm" data-icon="send">send</span>
+</button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- 10. SECTION 9: FOOTER (Shared Component) -->
+<footer class="w-full docked full-width bottom bg-surface dark:bg-surface border-t border-outline-variant/20 dark:border-outline-variant/20 flat no shadows mt-20">
+<div class="max-w-[1200px] mx-auto px-6 py-12 flex flex-col md:flex-row justify-between items-center gap-6">
+<!-- Brand & Built by -->
+<div class="flex flex-col items-center md:items-start gap-1">
+<div class="text-label-code-md font-label-code-md text-on-surface dark:text-on-surface font-medium flex items-center gap-2">
+<span>Designed &amp; Built by Hariprasath Ranjithkumar</span>
+</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant dark:text-on-surface-variant">
+          © 2026 Hariprasath Ranjithkumar. Built for robust backend systems.
+        </div>
+</div>
+<!-- Links -->
+<div class="flex items-center gap-6 text-label-code-sm font-label-code-sm text-on-surface-variant dark:text-on-surface-variant">
+<a class="hover:text-on-surface dark:hover:text-on-surface hover:underline transition-colors" href="https://github.com" rel="noreferrer" target="_blank">GitHub</a>
+<a class="hover:text-on-surface dark:hover:text-on-surface hover:underline transition-colors" href="https://linkedin.com" rel="noreferrer" target="_blank">LinkedIn</a>
+<a class="hover:text-on-surface dark:hover:text-on-surface hover:underline transition-colors" href="#projects">Documentation</a>
+<a class="hover:text-on-surface dark:hover:text-on-surface hover:underline transition-colors" href="#contact">PGP Key</a>
+</div>
+</div>
+</footer>
+</body></html>
