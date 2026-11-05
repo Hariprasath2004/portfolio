@@ -1,8 +1,7 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react' // or whatever plugin you're using
 
 export default defineConfig({
   plugins: [react()],
-  base: '/portfolio/',
-});
-
+  base: '/portfolio/', // Add this line
+})
